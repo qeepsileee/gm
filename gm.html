@@ -160,9 +160,9 @@
   }
   .peek-cat{
     position:absolute;
-    left:-58px;
-    top:50%;
-    width:90px;
+    left:-64px;
+    top:52%;
+    width:100px;
     transform:translateY(-50%);
     animation:peek 2.6s infinite ease-in-out;
     z-index:1;
@@ -224,7 +224,7 @@
     display:flex;
     justify-content:center;
   }
-  .bears svg{ width:170px; }
+  .bears svg{ width:180px; }
   .btn{
     border:none;
     border-radius:24px;
@@ -326,13 +326,22 @@
           <path d="M10 5 C35 5, 45 20, 30 30 C18 38, 30 48, 45 45" stroke="#7a5a4a" stroke-width="2" fill="none" stroke-linecap="round"/>
           <path d="M38 40 L45 45 L47 37" stroke="#7a5a4a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <svg class="peek-cat" viewBox="0 0 120 110" fill="none">
-          <path d="M18 78 C10 55 14 30 34 18 C40 10 46 8 50 14 C54 8 62 9 66 16 C86 26 92 52 84 76 C80 92 26 94 18 78 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
-          <circle cx="46" cy="56" r="4.5" fill="#2b2b2b"/>
-          <path d="M78 50 C82 52 82 58 78 60" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
-          <circle cx="40" cy="68" r="6" fill="#ffc2d1" opacity=".8"/>
-          <path d="M8 60 L26 62 M8 68 L26 66" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+
+        <!-- ============ PEEKING CAT (same head template as sleepy cat) ============ -->
+        <svg class="peek-cat" viewBox="0 0 150 150" fill="none">
+          <path d="M32 52 L14 14 L58 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M34 48 L23 24 L50 37 Z" fill="#ffc2d1"/>
+          <path d="M118 52 L136 14 L92 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M116 48 L127 24 L100 37 Z" fill="#ffc2d1"/>
+          <path d="M26 78 C20 48 44 30 75 30 C106 30 130 48 124 78 C120 106 100 128 75 128 C50 128 30 106 26 78 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M52 76 C56 70 64 70 68 76" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="94" cy="76" r="4.5" fill="#2b2b2b"/>
+          <path d="M78 90 Q82 94 86 90" stroke="#2b2b2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="48" cy="96" r="8" fill="#ffc2d1" opacity=".85"/>
+          <circle cx="102" cy="94" r="8" fill="#ffc2d1" opacity=".85"/>
+          <path d="M4 82 L34 84 M4 92 L34 90" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
+
         <div class="env-body"></div>
         <div class="env-labels">От кого: Зема<br>Кому: Доня</div>
         <div class="seal">🎀</div>
@@ -366,24 +375,40 @@
       <div class="torn-edge"></div>
       <div class="letter-title">Доброе утро, любовь моя! ☀️</div>
       <div class="heart-pop">💗</div>
+
+      <!-- ============ CUDDLING CATS (same head template as sleepy cat, two instances) ============ -->
       <div class="bears">
-        <svg viewBox="0 0 220 140" fill="none">
-          <!-- back cat (right, darker ear tip) -->
-          <path d="M158 128 C124 134 96 114 96 84 C90 66 98 48 116 40 C120 30 130 28 134 36 C138 28 148 30 152 38 C172 46 180 68 174 90 C174 112 190 128 158 128 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M132 34 C128 24 138 20 144 28 Z" fill="#2b2b2b"/>
-          <circle cx="128" cy="76" r="4.5" fill="#2b2b2b"/>
-          <path d="M156 70 C160 72 160 78 156 80" stroke="#2b2b2b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-          <circle cx="120" cy="90" r="7" fill="#ffc2d1" opacity=".85"/>
-          <path d="M96 84 C88 82 88 90 96 92" stroke="#2b2b2b" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <!-- front cat (left) -->
-          <path d="M92 132 C56 136 28 114 30 82 C24 62 34 42 54 34 C58 22 70 20 74 30 C78 20 90 22 94 32 C116 40 122 64 114 88 C114 114 128 132 92 132 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M50 76 C48 74 48 80 50 82" stroke="#2b2b2b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-          <path d="M78 74 C80 72 80 78 78 80" stroke="#2b2b2b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-          <circle cx="44" cy="92" r="7" fill="#ffc2d1" opacity=".85"/>
-          <circle cx="84" cy="92" r="7" fill="#ffc2d1" opacity=".85"/>
-          <path d="M4 84 L30 86 M4 92 L30 90" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+        <svg viewBox="0 0 260 160" fill="none">
+          <!-- back cat (right) - same template, translated -->
+          <g transform="translate(118,10) scale(0.82)">
+            <path d="M32 52 L14 14 L58 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M34 48 L23 24 L50 37 Z" fill="#ffc2d1"/>
+            <path d="M118 52 L136 14 L92 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M116 48 L127 24 L100 37 Z" fill="#ffc2d1"/>
+            <path d="M26 78 C20 48 44 30 75 30 C106 30 130 48 124 78 C120 106 100 128 75 128 C50 128 30 106 26 78 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+            <circle cx="66" cy="76" r="4.5" fill="#2b2b2b"/>
+            <circle cx="94" cy="76" r="4.5" fill="#2b2b2b"/>
+            <path d="M78 90 Q82 94 86 90" stroke="#2b2b2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="48" cy="96" r="8" fill="#ffc2d1" opacity=".85"/>
+            <circle cx="102" cy="94" r="8" fill="#ffc2d1" opacity=".85"/>
+          </g>
+          <!-- front cat (left) - same template, translated, drawn on top -->
+          <g transform="translate(0,4) scale(0.92)">
+            <path d="M32 52 L14 14 L58 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M34 48 L23 24 L50 37 Z" fill="#ffc2d1"/>
+            <path d="M118 52 L136 14 L92 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M116 48 L127 24 L100 37 Z" fill="#ffc2d1"/>
+            <path d="M26 78 C20 48 44 30 75 30 C106 30 130 48 124 78 C120 106 100 128 75 128 C50 128 30 106 26 78 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M52 76 C56 70 64 70 68 76" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M82 76 C86 70 94 70 98 76" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M70 90 Q75 95 80 90" stroke="#2b2b2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="46" cy="98" r="8" fill="#ffc2d1" opacity=".85"/>
+            <circle cx="104" cy="98" r="8" fill="#ffc2d1" opacity=".85"/>
+            <path d="M4 82 L34 84 M4 92 L34 90" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
         </svg>
       </div>
+
       <button class="btn primary" id="helloBtn">Доброе утро</button>
     </div>
   </div>
@@ -392,17 +417,35 @@
   <div class="scene" id="scene-question">
     <div class="question-card">
       <div class="question-title">Ты хорошо поспала?</div>
+
+      <!-- ============ SLEEPY CAT FACE (redesigned) ============ -->
       <div class="q-face">
-        <svg viewBox="0 0 140 130" fill="none" style="width:120px;">
-          <path d="M70 122 C36 122 14 100 16 74 C10 56 18 38 36 30 C40 20 50 18 54 26 C58 16 68 18 72 26 C76 18 86 16 90 26 C94 18 104 20 108 30 C126 38 134 56 128 74 C130 100 104 122 70 122 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M40 30 L34 12 M54 26 L52 8 M86 26 L88 8 M100 30 L106 12" stroke="#2b2b2b" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M46 68 C50 62 56 62 60 68" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
-          <path d="M80 68 C84 62 90 62 94 68" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
-          <circle cx="42" cy="86" r="8" fill="#ffc2d1" opacity=".85"/>
-          <circle cx="98" cy="86" r="8" fill="#ffc2d1" opacity=".85"/>
-          <path d="M62 82 C66 88 74 88 78 82" stroke="#2b2b2b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <svg viewBox="0 0 150 150" fill="none" style="width:130px;">
+          <!-- ears -->
+          <path d="M32 52 L14 14 L58 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M34 48 L23 24 L50 37 Z" fill="#ffc2d1"/>
+          <path d="M118 52 L136 14 L92 36 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M116 48 L127 24 L100 37 Z" fill="#ffc2d1"/>
+          <!-- head -->
+          <path d="M26 78 C20 48 44 30 75 30 C106 30 130 48 124 78 C120 106 100 128 75 128 C50 128 30 106 26 78 Z" fill="#fff" stroke="#2b2b2b" stroke-width="4" stroke-linejoin="round"/>
+          <!-- sleepy closed eyes -->
+          <path d="M46 76 C50 70 58 70 62 76" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M88 76 C92 70 100 70 104 76" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- nose + mouth -->
+          <path d="M72 88 L78 88 L75 92 Z" fill="#e8749a"/>
+          <path d="M75 92 L75 96 M75 96 C71 100 66 99 64 96 M75 96 C79 100 84 99 86 96" stroke="#2b2b2b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- blush -->
+          <circle cx="42" cy="94" r="9" fill="#ffc2d1" opacity=".85"/>
+          <circle cx="108" cy="94" r="9" fill="#ffc2d1" opacity=".85"/>
+          <!-- whiskers -->
+          <path d="M4 82 L34 84 M4 92 L34 90" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M146 82 L116 84 M146 92 L116 90" stroke="#2b2b2b" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- zzz -->
+          <text x="112" y="24" font-family="Comic Sans MS, sans-serif" font-size="16" font-weight="700" fill="#c8a8e0">z</text>
+          <text x="122" y="14" font-family="Comic Sans MS, sans-serif" font-size="12" font-weight="700" fill="#c8a8e0">z</text>
         </svg>
       </div>
+
       <div class="q-buttons">
         <button class="btn primary" id="yesBtn">ДА</button>
         <button class="btn" id="noBtn">НЕТ</button>
